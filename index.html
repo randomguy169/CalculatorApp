@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div id="calculator">
+      <input id="screen" readonly />
+      <div id="buttons">
+        <button onclick="AppendToDisplay('7')">7</button>
+        <button onclick="AppendToDisplay('8')">8</button>
+        <button onclick="AppendToDisplay('9')">9</button>
+        <button class="operator-btn" onclick="AppendToDisplay('+')">+</button>
+        <button onclick="AppendToDisplay('4')">4</button>
+        <button onclick="AppendToDisplay('5')">5</button>
+        <button onclick="AppendToDisplay('6')">6</button>
+        <button class="operator-btn" onclick="AppendToDisplay('-')">-</button>
+        <button onclick="AppendToDisplay('1')">1</button>
+        <button onclick="AppendToDisplay('2')">2</button>
+        <button onclick="AppendToDisplay('3')">3</button>
+        <button class="operator-btn" onclick="AppendToDisplay('×')">×</button>
+        <button class="operator-btn-clear" onclick="Clear()">C</button>
+        <button onclick="AppendToDisplay('0')">0</button>
+        <button onclick="Evaluate()">=</button>
+        <button class="operator-btn" onclick="AppendToDisplay('÷')">÷</button>
+      </div>
+    </div>
+  </body>
+</html>
